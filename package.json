@@ -1,0 +1,43 @@
+{
+	"name": "react-redux-boilerplate",
+	"version": "1.0.0",
+	"description": "A simple MERN stack starter.",
+	"main": "index.js",
+	"engines": {
+		"node": "10.7.0"
+	},
+	"scripts": {
+		"start": "concurrently \"npm run react-dev\" \"npm run server-dev\"",
+		"react-dev": "webpack -d --watch",
+		"server-dev": "nodemon server/index.js"
+	},
+	"author": "Hailey Bobella",
+	"license": "ISC",
+	"dependencies": {
+		"axios": "^0.18.0",
+		"body-parser": "^1.18.2",
+		"compression-webpack-plugin": "^1.1.11",
+		"css-loader": "^0.28.11",
+		"dotenv": "^5.0.1",
+		"express": "^4.16.3",
+		"history": "^4.7.2",
+		"jquery": "^3.3.1",
+		"passport": "^0.4.0",
+		"passport-local": "^1.0.0",
+		"react": "^16.2.0",
+		"react-dom": "^16.2.0",
+		"react-favicon": "0.0.14",
+		"react-redux": "^5.0.7",
+		"react-router": "^4.2.0",
+		"react-router-dom": "^4.2.2",
+		"react-router-redux": "^4.0.8",
+		"redux": "^3.7.2",
+		"semantic-ui-react": "^0.79.0"
+	},
+	"devDependencies": {
+		"babel-core": "^6.26.0",
+		"babel-loader": "^7.1.4",
+		"babel-preset-es2015": "^6.24.1",
+		"babel-preset-react": "^6.24.1"
+	}
+}
